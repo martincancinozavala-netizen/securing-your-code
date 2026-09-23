@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Página Web</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        background: #f2f2f2;
+        color: #222;
+        text-align: center;
+      }
+
+      header {
+        padding: 30px;
+        background: #222;
+        color: white;
+      }
+
+      main {
+        padding: 50px;
+      }
+
+      button {
+        padding: 12px 25px;
+        border: 0;
+        border-radius: 8px;
+        background: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover,
+      button:focus-visible {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Mi Página Web</h1>
+      <p>Bienvenido a mi sitio</p>
+    </header>
+
+    <main>
+      <h2>Hola 👋</h2>
+      <p>Esta es mi primera página web.</p>
+      <button id="saludar" type="button">Haz clic</button>
+    </main>
+
+    <script>
+      document.querySelector("#saludar").addEventListener("click", () => {
+        window.alert("¡Hola! Bienvenido a mi página.");
+      });
+    </script>
+  </body>
+</html>
